@@ -1,0 +1,28 @@
+.pagination-container {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  .circle-btn {
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .gray-icon {
+    color: gray;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .pagination-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+  }
