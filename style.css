@@ -133,4 +133,18 @@
     }
     
     
-    
+    .custom-offcanvas {
+      width: 45% !important;
+      top: 96px; /* Adjust based on topbar height (change 56px if needed) */
+      height: calc(75% - 96px); /* Fills remaining screen below topbar */
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      background-color: #6e6e6e;
+    }
+    #loginEmail{
+      background-color: rgb(218, 123, 123);
+    }
+    #Modal{
+      background-color: #6e6e6e;
+      margin-top: 50px;
+    }

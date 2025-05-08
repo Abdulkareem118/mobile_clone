@@ -68,88 +68,126 @@
     >
       <div class="d-flex align-items-center gap-3">
         <div class="dropdown">
-          <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list" style="font-size: 1.5rem"></i>
+          <button class="btn" type="button">
+            <a href="#" class="btn  d-flex justify-content-between align-items-center"
+            data-bs-toggle="modal" data-bs-target="#signupModal">
+            <i class="bi bi-list" ></i>
+         </a>
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </div>
         <div class="logo-text fw-bold">GSMArena</div>
       </div>
 
       <div class="icon-group">
         <i
-          class="bi bi-box-arrow-in-right me-2 text-white"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#loginOffcanvas"
-          aria-controls="loginOffcanvas"
-        ></i>
-        <a href="/signUp.html" class="text-white"
-          ><i class="bi bi-person-plus"></i
-        ></a>
-      </div>
-
-      <div
-        class="offcanvas offcanvas-start top-bar w-100"
-        tabindex="-1"
-        id="loginOffcanvas"
-        aria-labelledby="loginOffcanvasLabel"
-      >
+        class="bi bi-box-arrow-in-right me-2 text-white"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#loginOffcanvas"
+        aria-controls="loginOffcanvas"
+      ></i>
+      
+      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="loginOffcanvasLabel">Login</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <h5 class="offcanvas-title text-white" id="loginOffcanvasLabel">Login</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <form>
             <div class="mb-3">
-              <label for="loginEmail" class="form-label">Email address</label>
               <div class="input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-envelope-fill"></i
-                ></span>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="loginEmail"
-                  placeholder="Enter email"
-                  required
-                />
+                <span class="input-group-text bg-dark">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input type="email" class="form-control" id="loginEmail" />
               </div>
             </div>
             <div class="mb-3">
-              <label for="loginPassword" class="form-label">Password</label>
               <div class="input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-lock-fill"></i
-                ></span>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="loginPassword"
-                  placeholder="Enter password"
-                  required
-                />
+                <span class="input-group-text bg-dark">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input type="password" class="form-control" id="loginPassword" placeholder="YOUR PASSWORD"/>
               </div>
             </div>
-            <button type="submit" class="btn btn-danger w-100 mb-2">
-              Login
-            </button>
-            <div class="text-center">
-              <a href="#" class="text-decoration-none text-white"
-                >I forgot my password</a
-              >
-            </div>
+            <button type="submit" class="btn btn-danger w-100">LOG IN</button>
+            <p class="text-white text-center">I forgot Password</p>
           </form>
+          
         </div>
+
+        <!-- SIGNUP -->
+      </div>
+      <a href="/signUp.html">
+     <i class="bi bi-person-plus"></i>
+   </a>
+   <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down" style="max-width: 100%; margin: 0;">
+      <div class="modal-content" style="height: 90vh;" id="Modal">
+        <div class="modal-body text-white d-flex flex-column justify-content-between">
+  
+          <!-- Top Icons -->
+          <div class="footer-icons d-flex justify-content-around mb-4 gap-4">
+            <i class="bi bi-youtube fs-2"></i>
+            <i class="bi bi-instagram fs-2"></i>
+            <i class="bi bi-tiktok fs-2"></i>
+            <i class="bi bi-cart fs-2"></i>
+            <i class="bi bi-google-play fs-2"></i>
+          </div>
+  
+          <!-- Footer Links Row -->
+          <div class="container mb-3">
+            <div class="row text-start justify-content-around">
+  
+              <!-- Column 3 (LEFT side) -->
+              <div class="col-6 col-md-2 mb-3 order-md-3">
+                <p>REVIEWS</p>
+                <p>GLOSSARY</p>
+                <p>COVERAGE</p>
+                <p>CONTACT US</p>
+                <p>HUAWEI</p>
+                
+              </div>
+  
+              <!-- Column 2 (CENTER) -->
+              <div class="col-6 col-md-2 mb-3 order-md-2">
+                <p>NEWS</p>
+                <p>DAILY DEALS</p>
+                <p>RUMOR MILL</p>
+                <p>MERCH</p>
+                <p>APPLE</p>
+                
+              </div>
+  
+              <!-- Column 1 (RIGHT side) -->
+              <div class="col-6 col-md-2 mb-3 order-md-1">
+                <p>HOME</p>
+                <p>COMPARE</p>
+                <p>TIP US</p>
+                <p>PRIVACY</p>
+                <a class="text-decoration-none text-white" href="/samsungPage.html"><p>SAMSUNG</p></a>
+                
+              </div>
+  
+            </div>
+          </div>
+  
+          <!-- Buttons and Store Links -->
+          <div class="text-center">
+            <div class="mb-3">
+              <button class="btn btn-danger me-2"><i class="bi bi-phone"></i> PHONE FINDER</button>
+              <button class="btn btn-primary"><i class="bi bi-phone"></i> MY PHONE</button>
+            </div>
+            <div class="text-muted">
+              <i class="bi bi-display text-white"></i> Desktop version &nbsp;&nbsp;
+              <i class="bi bi-google-play text-white"></i> Android app
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
       </div>
     </div>
 
