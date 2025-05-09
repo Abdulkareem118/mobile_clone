@@ -64,153 +64,167 @@
   <body>
     <!-- Top Bar -->
     <div
-      class="top-bar d-flex justify-content-between align-items-center px-3 py-2 text-white"
-    >
-      <div class="d-flex align-items-center gap-3">
-        <div class="dropdown">
-          <button class="btn" type="button">
-            <a href="#" class="btn  d-flex justify-content-between align-items-center"
-            data-bs-toggle="modal" data-bs-target="#signupModal">
-            <i class="bi bi-list" ></i>
-         </a>
-          </button>
-        </div>
-        <div class="logo-text fw-bold">GSMArena</div>
+    class="top-bar d-flex justify-content-between align-items-center px-3 py-2 text-white"
+  >
+    <div class="d-flex align-items-center gap-3">
+      <div class="dropdown">
+        <button class="btn" type="button">
+          <a href="#" class="btn  d-flex justify-content-between align-items-center"
+          data-bs-toggle="modal" data-bs-target="#signupModal">
+          <i class="bi bi-list" ></i>
+       </a>
+        </button>
       </div>
+      <div class="logo-text fw-bold">GSMArena</div>
+    </div>
 
-      <div class="icon-group">
-        <i
-        class="bi bi-box-arrow-in-right me-2 text-white"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#loginOffcanvas"
-        aria-controls="loginOffcanvas"
-      ></i>
-      
-      <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white" id="loginOffcanvasLabel">Login</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <form>
-            <div class="mb-3">
-              <div class="input-group">
-                <span class="input-group-text bg-dark">
-                  <i class="bi bi-envelope"></i>
-                </span>
-                <input type="email" class="form-control" id="loginEmail" />
-              </div>
-            </div>
-            <div class="mb-3">
-              <div class="input-group">
-                <span class="input-group-text bg-dark">
-                  <i class="bi bi-lock"></i>
-                </span>
-                <input type="password" class="form-control" id="loginPassword" placeholder="YOUR PASSWORD"/>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-danger w-100">LOG IN</button>
-            <p class="text-white text-center">I forgot Password</p>
-          </form>
-          
-        </div>
-
-        <!-- SIGNUP -->
+    <div class="icon-group">
+      <i
+      class="bi bi-box-arrow-in-right me-2 text-white"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#loginOffcanvas"
+      aria-controls="loginOffcanvas"
+    ></i>
+    
+    <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="loginOffcanvasLabel">Login</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <a href="/signUp.html">
-     <i class="bi bi-person-plus"></i>
-   </a>
-   <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen-sm-down" style="max-width: 100%; margin: 0;">
-      <div class="modal-content" style="height: 90vh;" id="Modal">
-        <div class="modal-body text-white d-flex flex-column justify-content-between">
-  
-          <!-- Top Icons -->
-          <div class="footer-icons d-flex justify-content-around mb-4 gap-4">
-            <i class="bi bi-youtube fs-2"></i>
-            <i class="bi bi-instagram fs-2"></i>
-            <i class="bi bi-tiktok fs-2"></i>
-            <i class="bi bi-cart fs-2"></i>
-            <i class="bi bi-google-play fs-2"></i>
-          </div>
-  
-          <!-- Footer Links Row -->
-          <div class="container mb-3">
-            <div class="row text-start justify-content-around">
-  
-              <!-- Column 3 (LEFT side) -->
-              <div class="col-6 col-md-2 mb-3 order-md-3">
-                <p>REVIEWS</p>
-                <p>GLOSSARY</p>
-                <p>COVERAGE</p>
-                <p>CONTACT US</p>
-                <p>HUAWEI</p>
-                
-              </div>
-  
-              <!-- Column 2 (CENTER) -->
-              <div class="col-6 col-md-2 mb-3 order-md-2">
-                <p>NEWS</p>
-                <p>DAILY DEALS</p>
-                <p>RUMOR MILL</p>
-                <p>MERCH</p>
-                <p>APPLE</p>
-                
-              </div>
-  
-              <!-- Column 1 (RIGHT side) -->
-              <div class="col-6 col-md-2 mb-3 order-md-1">
-                <p>HOME</p>
-                <p>COMPARE</p>
-                <p>TIP US</p>
-                <p>PRIVACY</p>
-                <a class="text-decoration-none text-white" href="/samsungPage.html"><p>SAMSUNG</p></a>
-                
-              </div>
-  
+      <div class="offcanvas-body">
+        <form>
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text bg-dark">
+                <i class="bi bi-envelope"></i>
+              </span>
+              <input type="email" class="form-control" id="loginEmail" />
             </div>
           </div>
-  
-          <!-- Buttons and Store Links -->
-          <div class="text-center">
-            <div class="mb-3">
-              <button class="btn btn-danger me-2"><i class="bi bi-phone"></i> PHONE FINDER</button>
-              <button class="btn btn-primary"><i class="bi bi-phone"></i> MY PHONE</button>
-            </div>
-            <div class="text-muted">
-              <i class="bi bi-display text-white"></i> Desktop version &nbsp;&nbsp;
-              <i class="bi bi-google-play text-white"></i> Android app
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text bg-dark">
+                <i class="bi bi-lock"></i>
+              </span>
+              <input type="password" class="form-control" id="loginPassword" placeholder="YOUR PASSWORD"/>
             </div>
           </div>
-  
+          <button type="submit" class="btn btn-danger w-100">LOG IN</button>
+          <p class="text-white text-center">I forgot Password</p>
+        </form>
+        
+      </div>
+     </div>
+      <!-- SIGNUP -->
+   
+    <a href="/signUp.html">
+   <i class="bi bi-person-plus"></i>
+ </a>
+ <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down" style="max-width: 100%; margin: 0;">
+    <div class="modal-content" style="height: 90vh;" id="Modal">
+      <div class="modal-body text-white d-flex flex-column justify-content-between">
+
+        <!-- Top Icons -->
+        <div class="footer-icons d-flex justify-content-around mb-4 gap-4 fs-4">
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-tiktok"></i>
+          <i class="bi bi-cart"></i>
+          <i class="bi bi-google-play"></i>
         </div>
+
+        <!-- Footer Links Row (Responsive) -->
+        <div class="container mb-3">
+          <div class="row row-cols-2 row-cols-md-3 g-3 text-center text-md-start">
+
+            <!-- Column 1 -->
+            <div>
+              <p>HOME</p>
+              <p>COMPARE</p>
+              <p>TIP US</p>
+              <p>PRIVACY</p>
+              <a class="text-decoration-none text-white" href="/samsungPage.html">
+                <p>SAMSUNG</p>
+              </a>
+              <p>XIAOMI</p>
+              <p>ONEPLUS</p>
+              <p>GOOGLE</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+              <p>NEWS</p>
+              <p>DAILY DEALS</p>
+              <p>RUMOR MILL</p>
+              <p>MERCH</p>
+              <p>APPLE</p>
+              <p>SONY</p>
+              <p>MOTOROLA</p>
+              <p>VIVO</p>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+              <p>REVIEWS</p>
+              <p>GLOSSARY</p>
+              <p>COVERAGE</p>
+              <p>CONTACT US</p>
+              <p>HUAWEI</p>
+              <p>HONOR</p>
+              <p>OPPO</p>
+              <p>[...]</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Buttons and Store Links -->
+        <div class="text-center">
+          <div class="mb-3 d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <button class="btn btn-danger px-4">
+              <i class="bi bi-phone"></i> PHONE FINDER
+            </button>
+            <button class="btn btn-primary px-4">
+              <i class="bi bi-phone"></i> MY PHONE
+            </button>
+          </div>
+
+          <div class="text-muted d-flex flex-column flex-sm-row justify-content-center gap-3 mt-2">
+            <span><i class="bi bi-display text-white"></i> Desktop version</span>
+            <span><i class="bi bi-google-play text-white"></i> Android app</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-      </div>
-    </div>
+</div>
 
-    <!-- Navigation Menu -->
-    <div
-    class="main-nav d-flex flex-wrap justify-content-center justify-content-md-around gap-2 gap-md-3 text-center"
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <div
+  class="main-nav d-flex flex-wrap justify-content-center justify-content-md-around gap-2 gap-md-3 text-center"
+  >
+    <a href="/index.html" class="px-3 py-2">HOME</a>
+    <a href="/News.html" class="px-3 py-2">NEWS</a>
+    <a href="/Reviews.html" class="px-3 py-2">REVIEWS</a>
+    <a href="/videos.html" class="px-3 py-2">VIDEOS</a>
+    <button
+      class="search-btn ms-3 d-flex align-items-center justify-content-center py-2 px-3"
     >
-      <a href="/index.html" class="px-3 py-2">HOME</a>
-      <a href="/News.html" class="px-3 py-2">NEWS</a>
-      <a href="/Reviews.html" class="px-3 py-2">REVIEWS</a>
-      <a href="/videos.html" class="px-3 py-2">VIDEOS</a>
-      <button
-        class="search-btn ms-3 d-flex align-items-center justify-content-center py-2 px-3"
-      >
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
 
-    <!-- HERO SECTION  -->
+  <!-- HERO SECTION  -->
 
-    <div class="vh-nav" style="height: 30vh;">
-  
-    </div>
+  <div class="vh-nav" style="height: 30vh;">
+
+  </div>
   <!-- Signup Section -->
   <div class="m-3 mt-5">
     <h2 class="fw-bold">Sign Up</h2>
